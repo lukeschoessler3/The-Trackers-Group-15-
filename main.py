@@ -20,3 +20,7 @@ def delete_meal(meals):
             print(f"{name} has been deleted.")
             return
     print(f"{name} not found.")
+
+def view_meals(meals):
+    for m in meals:
+        print(f"Meal: {m.name}, Calories: {m.calories}, Ingredients: {', '.join(m.ingredients)}")
