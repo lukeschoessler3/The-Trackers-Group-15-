@@ -20,3 +20,7 @@ def delete_meal(meals):
             print(f"{name} has been deleted.")
             return
     print(f"{name} not found.")
+
+def add_calories(meal):
+    total_calories_for_day = sum(m.calories for m in meal)
+    print(f"Total calories for the day: {total_calories_for_day}")
